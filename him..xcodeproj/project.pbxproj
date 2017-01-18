@@ -21,6 +21,7 @@
 		047647EF1E2F6CE000642581 /* HimNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047647EE1E2F6CE000642581 /* HimNameView.m */; };
 		047647F81E2F6D4300642581 /* TwoChatRoomVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 047647F71E2F6D4300642581 /* TwoChatRoomVc.m */; };
 		047647FB1E2F6D5700642581 /* TwoChatRoomVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 047647FA1E2F6D5700642581 /* TwoChatRoomVc.m */; };
+		25A0354185577546B754B287 /* libPods-him..a in Frameworks */ = {isa = PBXBuildFile; fileRef = 238BFDB9982D6C2469AA9CE3 /* libPods-him..a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,9 @@
 		047647F71E2F6D4300642581 /* TwoChatRoomVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoChatRoomVc.m; sourceTree = "<group>"; };
 		047647F91E2F6D5700642581 /* TwoChatRoomVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoChatRoomVc.h; sourceTree = "<group>"; };
 		047647FA1E2F6D5700642581 /* TwoChatRoomVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoChatRoomVc.m; sourceTree = "<group>"; };
+		238BFDB9982D6C2469AA9CE3 /* libPods-him..a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-him..a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F58F314E51BA6E8940BAD9F /* Pods-him..release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-him..release.xcconfig"; path = "Pods/Target Support Files/Pods-him./Pods-him..release.xcconfig"; sourceTree = "<group>"; };
+		C0BAFD218795F18E28CC4D8F /* Pods-him..debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-him..debug.xcconfig"; path = "Pods/Target Support Files/Pods-him./Pods-him..debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A0354185577546B754B287 /* libPods-him..a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +72,8 @@
 			children = (
 				047647AB1E2F6AB100642581 /* him. */,
 				047647AA1E2F6AB100642581 /* Products */,
+				EB36FFA190EE14DB466309DA /* Pods */,
+				6E9560108AEE4816386BBF6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,6 +276,23 @@
 			path = BaseViews;
 			sourceTree = "<group>";
 		};
+		6E9560108AEE4816386BBF6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				238BFDB9982D6C2469AA9CE3 /* libPods-him..a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB36FFA190EE14DB466309DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0BAFD218795F18E28CC4D8F /* Pods-him..debug.xcconfig */,
+				2F58F314E51BA6E8940BAD9F /* Pods-him..release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,9 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 047647C01E2F6AB100642581 /* Build configuration list for PBXNativeTarget "him." */;
 			buildPhases = (
+				D0BC8EFA42CE0543D32950E3 /* [CP] Check Pods Manifest.lock */,
 				047647A51E2F6AB100642581 /* Sources */,
 				047647A61E2F6AB100642581 /* Frameworks */,
 				047647A71E2F6AB100642581 /* Resources */,
+				39EB377768A8192128CC19E8 /* [CP] Embed Pods Frameworks */,
+				F94B30D2B2923431457F7E3A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,6 +361,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39EB377768A8192128CC19E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-him./Pods-him.-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0BC8EFA42CE0543D32950E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F94B30D2B2923431457F7E3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-him./Pods-him.-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		047647A51E2F6AB100642581 /* Sources */ = {
@@ -457,6 +532,7 @@
 		};
 		047647C11E2F6AB100642581 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0BAFD218795F18E28CC4D8F /* Pods-him..debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/him./himClasses/Other/himPCH.pch";
@@ -469,6 +545,7 @@
 		};
 		047647C21E2F6AB100642581 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F58F314E51BA6E8940BAD9F /* Pods-him..release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/him./himClasses/Other/himPCH.pch";
@@ -498,6 +575,7 @@
 				047647C21E2F6AB100642581 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
