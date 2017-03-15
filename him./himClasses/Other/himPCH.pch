@@ -6,6 +6,8 @@
 //  Created by ma c on 17/1/18.
 //  Copyright © 2017年 LXq. All rights reserved.
 //
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
 
 #ifndef himPCH_pch
 #define himPCH_pch
@@ -23,5 +25,8 @@
 #define SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
 
+#import <HyphenateLite/HyphenateLite.h>
+#import "EaseUI.h"
 
 #endif /* himPCH_pch */
+#endif
