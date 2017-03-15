@@ -327,6 +327,8 @@
 				TargetAttributes = {
 					047647A81E2F6AB100642581 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TRN98LTHJF;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -535,11 +537,14 @@
 			baseConfigurationReference = C0BAFD218795F18E28CC4D8F /* Pods-him..debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TRN98LTHJF;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/him./himClasses/Other/himPCH.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/him./himClasses/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Myself.him-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.conanplus.him;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d7fb91e1-7b09-4364-a342-9ab9391bb0c7";
+				PROVISIONING_PROFILE_SPECIFIER = himDevelopmentProfile;
 			};
 			name = Debug;
 		};
@@ -548,11 +553,15 @@
 			baseConfigurationReference = 2F58F314E51BA6E8940BAD9F /* Pods-him..release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = TRN98LTHJF;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/him./himClasses/Other/himPCH.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/him./himClasses/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Myself.him-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.conanplus.him;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "129953a3-8155-4f6a-8d8b-4c321c7c9b70";
+				PROVISIONING_PROFILE_SPECIFIER = himDistributionProfile;
 			};
 			name = Release;
 		};
