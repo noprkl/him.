@@ -1,14 +1,14 @@
 //
-//  HimNameView.m
-//  him.
+//  HUDBaseView.m
+//  her.
 //
-//  Created by ma c on 17/1/18.
+//  Created by 李祥起 on 2017/2/20.
 //  Copyright © 2017年 LXq. All rights reserved.
 //
 
-#import "HimNameView.h"
+#import "HUDBaseView.h"
 
-@implementation HimNameView
+@implementation HUDBaseView
 
 /*
 // Only override drawRect: if you perform custom drawing.

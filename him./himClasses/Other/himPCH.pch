@@ -1,9 +1,8 @@
-
 //
 //  himPCH.pch
 //  him.
 //
-//  Created by ma c on 17/1/18.
+//  Created by 李祥起 on 2017/3/22.
 //  Copyright © 2017年 LXq. All rights reserved.
 //
 #ifdef __OBJC__
@@ -12,11 +11,15 @@
 #ifndef himPCH_pch
 #define himPCH_pch
 
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define UserName @"UserName"
+
 // NSLog 增强
 #define MYDEBUG 1
 
 #ifdef MYDEBUG
-#define DLog(s,...) NSLog(@"[在%@中第%d行%s] %@", [[NSString 			stringWithFormat:@"%s", __FILE__] lastPathComponent] ,__LINE__, __FUNCTION__, [NSString stringWithFormat:(s),##__VA_ARGS__])
+#define DLog(s,...) NSLog(@"[在%@中第%d行] %@", [[NSString 			stringWithFormat:@"%s", __FILE__] lastPathComponent] ,__LINE__, [NSString stringWithFormat:(s),##__VA_ARGS__])
 #else
 #define MyLog(s,...)
 #endif
@@ -24,9 +27,39 @@
 // 屏幕宽高
 #define SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
+// 提示弹窗颜色
+#define Alert_Color    [UIColor colorWithHexString:@"#f7a348"]
+// 背景颜色
+#define BackGround_Color    [UIColor colorWithHexString:@"#f5f5f8"]
+// 16进制颜色
+#define HEXColor(var) [UIColor colorWithHexString:var]
+// weak简便写法
+#define XWeakSelf __weak typeof(self) weakSelf = self
+// size 简单写CGSize
+#define KSIZE(width, height) CGSizeMake(width, height)
+// point 简单写CGPoint
+#define KPOINT(x, y) CGPointMake(x, y)
 
+#define KDefault [NSUserDefaults standardUserDefaults]
+// 波浪高度
+#define WAVE_HEIGHT 65
+// 角度 53度
+#define KWaveAngle ((M_PI / 180) * 53)
+
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>              // 约束
+#import <AFNetworking.h>         // 网络
+#import <MJExtension.h>          // 数据解析
+#import <UIImageView+WebCache.h> // 图片加载
 #import <HyphenateLite/HyphenateLite.h>
 #import "EaseUI.h"
+
+// 自定义类
+#import "UIColor+Colors.h"          // 颜色类别
+#import "UIImage+Images.h"          // 图片类别
+#import "ShowHintView.h"            // 自定义提示框
 
 #endif /* himPCH_pch */
 #endif
